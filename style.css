@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #121212;
+  color: white;
+  margin: 0px;
+  padding: 0;
+}
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f1f1f;
+  padding: 10px 20px;
+  margin: 0;
+  overflow: visible;
+  padding: 1%;
+  height: 30px;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 2;
+}
+
+/* Dropdown Menu */
+.menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  right: 0; /* ✅ Para que se despliegue hacia la izquierda si está del lado derecho */
+  background: white;
+  min-width: 160px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s;
+  pointer-events: none;
+  border-radius: 0.5rem;
+  z-index: 10;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown-content a {
+  color: #374151;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: #f3f4f6;
+}
+/* Banner ocupa todo el ancho */
+.banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Sección hero */
+.hero {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -100px;
+  z-index: 2;
+}
+
+.tapa-overlay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.tapa {
+ 
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+}
+
+.tapa img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  margin: 10px;
+}
+
+.tapa figcaption {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #f5f5f5;
+}
+.contratapa {
+ 
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+}
+.contratapa img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+.contratapa figcaption {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #f5f5f5;
+}
+.texto-disco {
+  margin-top: 160px;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+.texto-disco p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Video */
+.video {
+  margin: 40px 0;
+  width: 90%;
+  max-width: 700px;
+  aspect-ratio: 16/9;
+}
+
+/* Spotify */
+.spotify-section {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.spotify {
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  height: 352px;
+}
