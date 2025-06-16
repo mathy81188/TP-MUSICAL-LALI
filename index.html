@@ -12,47 +12,76 @@
     <nav>
         <img src="./img/logo.png" alt="Logo de Lali" class="logo">
         <div class="dropdown">
-            <button class="menu">Menu</button>
+            <button class="menu"></button>
             <div class="dropdown-content">
-                <a href="#">Inicio</a>
-                <a href="#">Sobre el álbum</a>
-                <a href="#">Contacto</a>
+                <a href="#youtube">Youtube</a>
+                <a href="#spotify">Spotify</a>
             </div>
         </div>
     </nav>
 
     <main>
-        <img src="./img/banner.jpg" alt="Banner del álbum de Lali" class="banner">
 
-        <section class="hero">
+
+        <section class="banner">
             <div class="tapa-overlay">
                 <figure class="tapa">
                     <img src="./img/front-disco.jpeg" alt="Tapa del álbum de Lali">
-                    <figcaption>TAPA CD</figcaption>
+
                 </figure>
                 <figure class="contratapa">
                     <img src="./img/back-disco.jpeg" alt="Contratapa del álbum de Lali">
-                    <figcaption>CONTRATAPA CD</figcaption>
+
             </div>
 
-            <div class="texto-disco">
+            <figcaption class="texto-disco">
                 <p>
-                    Este es el último trabajo de Lali: <strong>No vayas a atender cuando el demonio llama</strong>. Un
-                    disco
-                    intenso, que combina sonidos pop con influencias latinas y urbanas. La artista despliega toda su
-                    potencia en una obra que desafía límites y géneros.
+                    "Con <strong> No Vayas A Atender Cuando El Demonio Llama</strong>, Lali saca a relucir una faceta
+                    más rebelde y auténtica. Se trata de un
+                    trabajo visceral, desafiante y sin concesiones, que marca un antes y un después en su carrera: el
+                    álbum más rockero que
+                    ha hecho hasta el momento, sin renunciar a la esencia pop que la convirtió en ícono generacional."
+                    <span>FUENTE: <a class="fuente"
+                            href="https://billboard.ar/lanzamientos/lali-lanza-su-esperado-album-no-vayas-a-atender-cuando-el-demonio-llama/">Billbord
+                            Argentina</a> </span>
                 </p>
-            </div>
+            </figcaption>
         </section>
 
-        <section>
-            <iframe class="video" src="https://www.youtube.com/embed/RAeht89VvtA?si=-ONgwQKkokpybOcC&amp;start=65"
+        <section class="video" id="youtube">
+            <p class="texto-video">“Fue mi primer amor, platónico. Locura era de la Barra de Huracán. Crecí a cinco
+                cuadras de la cancha y él era un
+                personaje mítico del barrio, un bombonazo mal. Era un barra muy peligroso y a la vez muy amoroso. Muy
+                personaje de
+                barrio, si se tiene que cagar a trompadas se caga a trompadas y si tiene que defender a los suyos lo
+                hace. Te generaba
+                respeto y miedo al mismo tiempo. Moría de amor por él, para mí era Brad Pitt. Era precioso, todas
+                estaban locas por él”,
+                narró la artista en Luzu TV.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HK0TZiYSbWo?si=_IJ68tmvaF8-sbkZ"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
-        <section class="spotify-section">
+        <section class="gira">
+            <p class="texto-gira">Lali no solo lanzó una gira colosal basada en su nuevo disco, sino que generó un tsunami de demanda,
+                llenando cuatro
+                noches en Vélez y consolidando su lugar como icono del pop nacional. Su show es una explosión de
+                energía, invitadas de
+                lujo, identidad sonora bien definida y una conexión auténtica con el público. Con un despliegue
+                imponente, Lali marcó un hito en su carrera al presentar el show más impactante de su trayectoria ante
+                más de 90.000 personas en el Estadio Vélez Sarsfield. La artista, con su inconfundible energía, dejó
+                claro que su
+                propuesta va mucho más allá de un simple concierto: es una experiencia que atraviesa generaciones y pone
+                al pop
+                argentino en un nuevo estándar de calidad y creatividad.</p>
+            <img src="./img/lali-velez.jpg" alt="lali en el estadio Vélez Sarsfield" class="lali-velez">
+        </section>
+
+        <section class="spotify" id="spotify">
+
+
             <iframe class="spotify"
                 src="https://open.spotify.com/embed/album/56BPpEYgadIVVXYLabO5Je?utm_source=generator" frameborder="0"
                 allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -60,7 +89,22 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="redes">
+        <ul>
+            <li>
+                <a class="bi-youtube" href="https://www.youtube.com/@LaliOk"><img src="./img/icons/youtube.png"
+                        alt="YouTube"></a>
+            </li>
+            <li>
+                <a class="bi-spotify"
+                    href="https://open.spotify.com/intl-es/artist/22P1OY4TRFRwhP0q29loQ8?si=DDRs73m_SAObGuALAryYyQ"><img
+                        src="./img/icons/Spotify.png" alt="Spotify"></a>
+            </li>
+            <li>
+                <a class="bi-instagram" href="https://www.instagram.com/lali/"><img src="./img/icons/instagram.png"
+                        alt="instagram"></a>
+            </li>
+        </ul>
     </footer>
 </body>
 

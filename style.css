@@ -5,8 +5,7 @@
 
 body {
   font-family: "Arial", sans-serif;
-  background-color: #121212;
-  color: white;
+  background-color: #f2efef;
   margin: 0px;
   padding: 0;
 }
@@ -15,26 +14,31 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1f1f1f;
   padding: 10px 20px;
   margin: 0;
   overflow: visible;
   padding: 1%;
-  height: 30px;
+  height: 40px;
 }
 
 .logo {
+  padding-top: 15px;
+  padding-bottom: 15px;
   height: 60px;
-  margin-right: 2;
 }
 
 /* Dropdown Menu */
 .menu {
-  background: none;
+  background-image: url("./img/icons/hamburger-button.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 30px;
+  height: 30px;
   border: none;
-  color: white;
-  font-size: 1.5rem;
+  color: rgb(8, 7, 7);
   cursor: pointer;
+  padding-right: 10px;
 }
 
 .dropdown {
@@ -85,94 +89,135 @@ main {
   align-items: center;
 }
 
-/* Sección hero */
-.hero {
+/* Sección banner */
+.banner {
+  background-image: url("./img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
+  justify-content: center;
   width: 100%;
+  height: 500px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center;
-  margin-top: -100px;
   z-index: 2;
 }
 
 .tapa-overlay {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-around;
   position: absolute;
-  top: -100px;
+  top: 5%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
+  padding: 10px;
+  width: 100%;
+  height: 310px;
 }
 
 .tapa {
- 
-  flex-direction: column;
   align-items: center;
-  max-width: 200px;
+  max-width: 300px;
 }
 
 .tapa img {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  margin: 10px;
 }
 
-.tapa figcaption {
-  margin-top: 10px;
-  font-weight: bold;
-  color: #f5f5f5;
-}
 .contratapa {
- 
-  flex-direction: column;
   align-items: center;
-  max-width: 200px;
+  max-width: 300px;
 }
 .contratapa img {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
-.contratapa figcaption {
-  margin-top: 10px;
-  font-weight: bold;
-  color: #f5f5f5;
-}
+
 .texto-disco {
-  margin-top: 160px;
-  max-width: 600px;
-  padding: 20px;
+  position: absolute;
+  top: 68%;
+  padding: 40px;
   text-align: center;
 }
 
 .texto-disco p {
+  color: white;
   font-size: 1rem;
   line-height: 1.5;
 }
-
+.fuente {
+  text-decoration: none;
+  color: white;
+}
 /* Video */
 .video {
-  margin: 40px 0;
-  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
   max-width: 700px;
-  aspect-ratio: 16/9;
+  align-self: center;
+}
+
+.texto-video {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.gira{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
 }
 
 /* Spotify */
-.spotify-section {
+.spotify {
   display: flex;
-  justify-content: center;
-  margin: 40px 0;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
+}
+/* footer */
+.redes {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
 }
 
-.spotify {
-  border-radius: 12px;
-  width: 90%;
-  max-width: 600px;
-  height: 352px;
+li {
+  display: inline-flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.bi-youtube {
+  font-size: 10px;
+
+  padding-bottom: 1px;
+}
+.bi-instagram {
+  font-size: 30px;
+}
+.bi-spotify {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  
 }
